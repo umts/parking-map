@@ -4,7 +4,8 @@ Interactive parking map of the University of Massachusetts Amherst campus.
 
 ## Development
 
-This application is client-only SPA that is bundled using [`vite`][vite] through [`node.js`][nodejs] + [`npm`][npm].
+This application is clientside SPA based on the [`ArcGIS Maps SDK for Javascript`][arcgis-sdk]. It is built/bundled
+using [`vite`][vite] on the [`node.js`][nodejs] + [`npm`][npm] platform.
 It is recommended that you use [`nodenv`][nodenv] to manage local node installations.
 
 ### Requirements
@@ -35,6 +36,7 @@ Bug reports and pull requests are welcome on [GitHub][github].
 
 The application is available as open source under the terms of the [MIT License][license].
 
+[arcgis-sdk]: https://developers.arcgis.com/javascript/latest/
 [github]: https://github.com/umts/parking-map
 [license]: https://opensource.org/licenses/MIT
 [nodejs]: https://nodejs.org

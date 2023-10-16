@@ -1,3 +1,10 @@
-h1 {
-  color: darkred;
+@import url("@arcgis/core/assets/esri/css/main.css");
+
+html,
+body,
+#view {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
