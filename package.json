@@ -4,14 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vite",
     "lint": "eslint .",
-    "lint:css": "stylelint **/*.css"
+    "lint:css": "stylelint **/*.css",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "*"
   },
   "devDependencies": {
-    "vite": "^4.4.5",
     "eslint": "*",
     "eslint-config-google": "*",
     "stylelint": "*",
