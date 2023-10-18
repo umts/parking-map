@@ -14,4 +14,20 @@ export default new FeatureLayer({
       },
     },
   },
+  popupTemplate: {
+    title: '{Building_Name}',
+    content: [{
+      type: 'text',
+      text: '{Address}',
+    }, {
+      type: 'media',
+      mediaInfos: [{
+        type: 'image',
+        title: null,
+        value: {
+          sourceURL: '{PhotoURL}',
+        },
+      }],
+    }],
+  },
 });
