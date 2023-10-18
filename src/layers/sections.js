@@ -30,4 +30,19 @@ export default new FeatureLayer({
       symbol: {type: 'simple-fill', color: [192, 192, 0, 0.5], outline: {color: '#bfbf00'}},
     }],
   },
+  labelingInfo: [{
+    symbol: {
+      type: 'text',
+      color: 'white',
+      haloColor: 'black',
+      haloSize: 1.25,
+      font: {
+        size: 16,
+      },
+    },
+    labelExpressionInfo: {
+      expression: '$feature.SectionCode',
+    },
+    minScale: 36111,
+  }],
 });
