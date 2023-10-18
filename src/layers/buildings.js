@@ -14,6 +14,22 @@ export default new FeatureLayer({
       },
     },
   },
+  labelsVisible: false,
+  labelingInfo: [{
+    symbol: {
+      type: 'text',
+      color: 'white',
+      haloColor: 'black',
+      haloSize: 1,
+      font: {
+        size: 10,
+      },
+    },
+    labelExpressionInfo: {
+      expression: '$feature.Building_Name',
+    },
+    minScale: 9027,
+  }],
   popupTemplate: {
     title: '{Building_Name}',
     content: [{
