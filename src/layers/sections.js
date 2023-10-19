@@ -1,5 +1,8 @@
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 
+/**
+ * Lot sections data layer.
+ */
 export default new FeatureLayer({
   portalItem: {
     id: '7f8f103d89b544b9b13b1fd7ffcd4338',
@@ -98,6 +101,12 @@ export default new FeatureLayer({
   },
 });
 
+/**
+ * Formats a lot section's color for display.
+ *
+ * @param {*} color
+ * @return {*}
+ */
 function formatColor(color) {
   if (color === 'Pink') {
     return 'Pink (Metered)';
@@ -108,6 +117,13 @@ function formatColor(color) {
   }
 }
 
+/**
+ * Formats a lot section's enforcement hours for display.
+ *
+ * @param {*} color
+ * @param {*} hours
+ * @return {*}
+ */
 function formatHours(color, hours) {
   const requirement = (color === 'Pink') ? 'Payment' : 'Permit';
   if (hours === 'BusinessHours') {
@@ -121,6 +137,12 @@ function formatHours(color, hours) {
   }
 }
 
+/**
+ * Formats a lot section's permit eligibility for display.
+ *
+ * @param {*} color
+ * @return {*}
+ */
 function formatPermitEligibility(color) {
   if (color === 'Blue') {
     return 'Faculty, staff and graduate students only';
@@ -137,6 +159,12 @@ function formatPermitEligibility(color) {
   }
 }
 
+/**
+ * Formats a lot section's Parkmobile zone for display.
+ *
+ * @param {*} parkmobileZoneID
+ * @return {*}
+ */
 function formatParkmobileZoneID(parkmobileZoneID) {
   return !!(parkmobileZoneID) ? `Zone #${parkmobileZoneID}` : null;
 }
