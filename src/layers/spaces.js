@@ -35,6 +35,7 @@ export default new FeatureLayer({
     )
   `,
   title: 'Spaces',
+  visible: false,
   renderer: {
     type: 'unique-value',
     field: 'ParkingSpaceSubCategory',
