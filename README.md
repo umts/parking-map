@@ -4,8 +4,9 @@ Interactive parking map of the University of Massachusetts Amherst campus.
 
 ## Development
 
-This application is clientside SPA based on the [`ArcGIS Maps SDK for Javascript`][arcgis-sdk]. It is built/bundled
+This application is a clientside-only SPA based on the [`ArcGIS Maps SDK for Javascript`][arcgis-sdk] and built/bundled
 using [`vite`][vite] on the [`node.js`][nodejs] + [`npm`][npm] platform.
+
 It is recommended that you use [`nodenv`][nodenv] to manage local node installations.
 
 ### Requirements
