@@ -1,0 +1,24 @@
+{
+  "name": "parking-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "lint:css": "stylelint **/*.css",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/core": "*",
+    "vite": "*",
+    "vite-plugin-pwa": "*"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*"
+  }
+}

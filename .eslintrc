@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": "google",
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/"
+  ],
+  "rules": {
+    "max-len": ["error", {"code": 120}]
+  }
+}
