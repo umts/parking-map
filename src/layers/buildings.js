@@ -12,6 +12,7 @@ export default new FeatureLayer({
   portalItem: {
     id: 'c048f4a9df6344b19281876740c44ba0',
   },
+  title: 'Buildings',
   renderer: {
     type: 'simple',
     symbol: {
