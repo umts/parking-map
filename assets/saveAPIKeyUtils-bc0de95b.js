@@ -1,0 +1,1 @@
+import{bf as o,dk as p,I as i}from"./index-501d5c3e.js";function t(a){if(o.apiKey&&p(a.portal.url))throw new i("save-api-key-utils:api-key-not-supported",`Saving is not supported on ${a.portal.url} when using an api key`)}export{t as i};
