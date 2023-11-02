@@ -1,6 +1,6 @@
 # Parking Map
 
-Interactive parking map of the University of Massachusetts Amherst campus.
+Interactive parking map for the University of Massachusetts Amherst campus
 
 ## Development
 
