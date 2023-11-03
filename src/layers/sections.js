@@ -48,7 +48,7 @@ export default new FeatureLayer({
     labelExpressionInfo: {
       expression: '$feature.SectionCode',
     },
-    minScale: 36111,
+    minScale: 9027.977411, // vector zoom level 15
   }],
   popupTemplate: {
     lastEditInfoEnabled: false,
