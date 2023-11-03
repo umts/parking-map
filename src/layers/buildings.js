@@ -27,17 +27,17 @@ export default new FeatureLayer({
   labelingInfo: [{
     symbol: {
       type: 'text',
-      color: 'white',
-      haloColor: 'black',
+      color: 'black',
+      haloColor: 'white',
       haloSize: 1,
       font: {
-        size: 10,
+        size: 8,
       },
     },
     labelExpressionInfo: {
       expression: '$feature.Building_Name',
     },
-    minScale: 9027,
+    minScale: 4513.988705, // vector zoom level 16
   }],
   popupTemplate: {
     title: '{Building_Name}',
