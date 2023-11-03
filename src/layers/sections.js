@@ -10,6 +10,7 @@ export default new FeatureLayer({
   layerId: 1,
   definitionExpression: `SectionPublicVisible = 'Yes'`,
   outFields: ['*'],
+  title: 'Lots',
   renderer: {
     type: 'unique-value',
     field: 'SectionColor',
