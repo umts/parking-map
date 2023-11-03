@@ -13,6 +13,10 @@ export default new MapView({
     maxZoom: 20,
     minZoom: 14,
   },
+  highlightOptions: {
+    color: [0, 0, 0, 0.25],
+    haloOpacity: 0.5,
+  },
   ui: {
     components: ['attribution'],
   },
