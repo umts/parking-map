@@ -11,6 +11,9 @@ import personWalkingLuggageIcon from '../icons/person-walking-luggage.svg';
 import squareParkingIcon from '../icons/square-parking.svg';
 import truckRampBoxIcon from '../icons/truck-ramp-box.svg';
 
+/**
+ * Lot spaces data layer.
+ */
 export default new FeatureLayer({
   portalItem: {
     id: '7f8f103d89b544b9b13b1fd7ffcd4338',
