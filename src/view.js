@@ -10,7 +10,7 @@ export default new MapView({
   center: [-72.5283, 42.3898],
   zoom: 15,
   constraints: {
-    maxZoom: 20,
+    maxZoom: 22,
     minZoom: 14,
   },
   highlightOptions: {
