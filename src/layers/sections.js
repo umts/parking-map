@@ -2,6 +2,9 @@ import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 
 /**
  * Lot sections data layer.
+ *
+ *   - renderer is overridden to add transparency to the fill colors
+ *
  */
 export default new FeatureLayer({
   portalItem: {
@@ -63,6 +66,7 @@ export default new FeatureLayer({
         const permitEligibility = formatPermitEligibility(attributes['SectionColor']);
         const parkmobileZoneID = formatParkmobileZoneID(attributes['ParkmobileZoneID']);
 
+        // styled using the esri provided table content classes, so watch for changes on upgrade
         const wrapper = document.createElement('div');
         wrapper.appendChild(document.createRange().createContextualFragment(`
           <table class="esri-widget__table">
@@ -105,8 +109,8 @@ export default new FeatureLayer({
 /**
  * Formats a lot section's color for display.
  *
- * @param {*} color
- * @return {*}
+ * @param {String} color
+ * @return {String|null}
  */
 function formatColor(color) {
   if (color === 'Pink') {
@@ -121,9 +125,9 @@ function formatColor(color) {
 /**
  * Formats a lot section's enforcement hours for display.
  *
- * @param {*} color
- * @param {*} hours
- * @return {*}
+ * @param {String} color
+ * @param {String} hours
+ * @return {String|null}
  */
 function formatHours(color, hours) {
   const requirement = (color === 'Pink') ? 'Payment' : 'Permit';
@@ -141,8 +145,8 @@ function formatHours(color, hours) {
 /**
  * Formats a lot section's permit eligibility for display.
  *
- * @param {*} color
- * @return {*}
+ * @param {String} color
+ * @return {String|null}
  */
 function formatPermitEligibility(color) {
   if (color === 'Blue') {
@@ -163,8 +167,8 @@ function formatPermitEligibility(color) {
 /**
  * Formats a lot section's Parkmobile zone for display.
  *
- * @param {*} parkmobileZoneID
- * @return {*}
+ * @param {String} parkmobileZoneID
+ * @return {String|null}
  */
 function formatParkmobileZoneID(parkmobileZoneID) {
   return !!(parkmobileZoneID) ? `Zone #${parkmobileZoneID}` : null;
