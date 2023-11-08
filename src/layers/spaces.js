@@ -1,15 +1,15 @@
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
-import accessibleIcon from '../icons/accessible-icon.svg';
-import chargingStationIcon from '../icons/charging-station.svg';
-import circleDollarToSlotIcon from '../icons/circle-dollar-to-slot.svg';
-import circleXmarkIcon from '../icons/circle-xmark.svg';
-import massachusettsIcon from '../icons/massachusetts.svg';
-import motorcycleIcon from '../icons/motorcycle.svg';
-import peopleCarryBoxIcon from '../icons/people-carry-box.svg';
-import peopleGroupIcon from '../icons/people-group.svg';
-import personWalkingLuggageIcon from '../icons/person-walking-luggage.svg';
-import squareParkingIcon from '../icons/square-parking.svg';
-import truckRampBoxIcon from '../icons/truck-ramp-box.svg';
+import accessibleIcon from '@fortawesome/fontawesome-free/svgs/solid/wheelchair-move.svg';
+import chargingStationIcon from '@fortawesome/fontawesome-free/svgs/solid/charging-station.svg';
+import circleDollarToSlotIcon from '@fortawesome/fontawesome-free/svgs/solid/circle-dollar-to-slot.svg';
+import circleXmarkIcon from '@fortawesome/fontawesome-free/svgs/solid/circle-xmark.svg';
+import motorcycleIcon from '@fortawesome/fontawesome-free/svgs/solid/motorcycle.svg';
+import peopleCarryBoxIcon from '@fortawesome/fontawesome-free/svgs/solid/people-carry-box.svg';
+import peopleGroupIcon from '@fortawesome/fontawesome-free/svgs/solid/people-group.svg';
+import personWalkingLuggageIcon from '@fortawesome/fontawesome-free/svgs/solid/person-walking-luggage.svg';
+import squareParkingIcon from '@fortawesome/fontawesome-free/svgs/solid/square-parking.svg';
+import truckRampBoxIcon from '@fortawesome/fontawesome-free/svgs/solid/truck-ramp-box.svg';
+import massachusettsIcon from '../assets/massachusetts.svg';
 
 /**
  * Lot spaces data layer.
