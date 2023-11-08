@@ -4,6 +4,9 @@ import buildings from '../layers/buildings.js';
 import sections from '../layers/sections.js';
 import view from '../view.js';
 
+/**
+ * Widget that searches for buildings and lots.
+ */
 export default new Expand({
   view,
   expandIcon: 'search',
