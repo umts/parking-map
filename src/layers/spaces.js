@@ -38,47 +38,47 @@ export default new FeatureLayer({
   renderer: {
     type: 'unique-value',
     field: 'ParkingSpaceSubCategory',
-    defaultSymbol: {type: 'picture-marker', url: squareParkingIcon},
+    defaultSymbol: {type: 'picture-marker', url: squareParkingIcon, width: 12, height: 12},
     uniqueValueInfos: [{
       value: 'Meter-Coin',
-      symbol: {type: 'picture-marker', url: circleDollarToSlotIcon},
+      symbol: {type: 'picture-marker', url: circleDollarToSlotIcon, width: 12, height: 12},
     }, {
       value: 'Meter-Paystation',
-      symbol: {type: 'picture-marker', url: circleDollarToSlotIcon},
+      symbol: {type: 'picture-marker', url: circleDollarToSlotIcon, width: 12, height: 12},
     }, {
       value: 'R-Carpool',
-      symbol: {type: 'picture-marker', url: peopleGroupIcon},
+      symbol: {type: 'picture-marker', url: peopleGroupIcon, width: 12, height: 12},
     }, {
       value: 'R-Client',
-      symbol: {type: 'picture-marker', url: circleXmarkIcon},
+      symbol: {type: 'picture-marker', url: circleXmarkIcon, width: 12, height: 12},
     }, {
       value: 'R-EV Stations',
-      symbol: {type: 'picture-marker', url: chargingStationIcon},
+      symbol: {type: 'picture-marker', url: chargingStationIcon, width: 12, height: 12},
     }, {
       value: 'R-Handicapped',
-      symbol: {type: 'picture-marker', url: accessibleIcon},
+      symbol: {type: 'picture-marker', url: accessibleIcon, width: 12, height: 12},
     }, {
       value: 'R-Motorcycle',
-      symbol: {type: 'picture-marker', url: motorcycleIcon},
+      symbol: {type: 'picture-marker', url: motorcycleIcon, width: 12, height: 12},
     }, {
       value: 'Painted-Dock',
-      symbol: {type: 'picture-marker', url: truckRampBoxIcon},
+      symbol: {type: 'picture-marker', url: truckRampBoxIcon, width: 12, height: 12},
     }, {
       value: 'R-State',
-      symbol: {type: 'picture-marker', url: massachusettsIcon},
+      symbol: {type: 'picture-marker', url: massachusettsIcon, width: 12, height: 12},
     }, {
       value: 'R-Visitor',
-      symbol: {type: 'picture-marker', url: personWalkingLuggageIcon},
+      symbol: {type: 'picture-marker', url: personWalkingLuggageIcon, width: 12, height: 12},
     }, {
       value: 'R-15Min',
-      symbol: {type: 'picture-marker', url: peopleCarryBoxIcon},
+      symbol: {type: 'picture-marker', url: peopleCarryBoxIcon, width: 12, height: 12},
     }],
   },
   featureReduction: {
     type: 'cluster',
-    clusterRadius: '24',
-    clusterMinSize: '12',
-    clusterMaxSize: '12',
+    clusterRadius: 36,
+    clusterMinSize: 12,
+    clusterMaxSize: 12,
     labelingInfo: [{
       labelExpressionInfo: {
         expression: '$feature.cluster_count',
