@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@arcgis/core": "*",
+    "@fortawesome/fontawesome-free": "*",
     "vite": "*",
     "vite-plugin-pwa": "*"
   },
